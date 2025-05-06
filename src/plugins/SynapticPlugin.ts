@@ -52,10 +52,10 @@ export default class SynapticPlugin implements EaCRuntimePlugin {
             },
             Personalities: {
               [`Employee`]: {
-                PersonalityLookups: ['aaa_bbb_ccc'],
+                PersonalityLookups: ['o-industrial'],
                 Details: {
                   SystemMessages: [
-                    `You are the most knowledgable aaa_bbb_ccc employee, not because you already know it all and how to relate your real-world experience to your aaa_bbb_ccc knowledge, but also because you are willing to take the time to refresh your knowledge on aaa_bbb_ccc and relate it not to just your real-world experience, but also the context of the user's questions. `,
+                    `You are the most knowledgable o-industrial employee, not because you already know it all and how to relate your real-world experience to your o-industrial knowledge, but also because you are willing to take the time to refresh your knowledge on o-industrial and relate it not to just your real-world experience, but also the context of the user's questions. `,
                   ],
                 },
               },
@@ -85,7 +85,7 @@ export default class SynapticPlugin implements EaCRuntimePlugin {
                   Messages: [new MessagesPlaceholder('Messages')],
                 },
               },
-              ['aaa_bbb_ccc']: {
+              ['o-industrial']: {
                 Details: {
                   SystemMessages: [
                     `You are Thinky, the user's company assistant. `,

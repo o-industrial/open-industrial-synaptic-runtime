@@ -29,7 +29,7 @@ export const Configure: CircuitConfiguration<'Graph'> = (
           Details: {
             Type: 'DenoKV',
             Name: 'Company',
-            Description: 'The aaa_bbb_ccc document indexer to use.',
+            Description: 'The o-industrial document indexer to use.',
             DenoKVDatabaseLookup: 'thinky',
             RootKey: ['Synaptic', 'Indexers', 'CompanyChat'],
           } as EaCDenoKVIndexerDetails,
@@ -100,7 +100,7 @@ export const Configure: CircuitConfiguration<'Graph'> = (
     Type: 'Graph',
     Name: 'RAG Chat',
     Description:
-      'This circuit is used to have conversation about aaa_bbb_ccc and all its capabilities.',
+      'This circuit is used to have conversation about o-industrial and all its capabilities.',
     IsCallable: true,
     PersistenceLookup: ctx.AIaCLookup('company-chat'),
     InputSchema: CompanyChatCircuitInput,
@@ -116,7 +116,7 @@ export const Configure: CircuitConfiguration<'Graph'> = (
         Type: 'ChatPrompt',
         PersonalityLookup: `${SynapticPlugin.name}|Employee`,
         SystemMessage:
-          `Greet the user, and let them know you can help answer any aaa_bbb_ccc related questions. `,
+          `Greet the user, and let them know you can help answer any o-industrial related questions. `,
         NewMessages: [new HumanMessage('Hi')],
         Neurons: {
           '': `llm`,
